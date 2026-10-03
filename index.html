@@ -8,7 +8,7 @@
 * {
     box-sizing: border-box;
 }
-
+    
 body {
     margin: 0;
     font-family: "Andale Mono", monospace;
@@ -350,5 +350,5 @@ footer {
 <section><h2>Relação com a informática</h2><div class="card"><p>As ideias de Ada ajudaram a estabelecer a noção de criar algoritmos para que máquinas executem tarefas. A Calculadora Verde segue esse legado ao usar programação para resolver um problema científico e ambiental.</p></div></section>
 </main><footer>Calculadora Verde  • Ada Lovelace</footer>
 <script>
-function calcular(){const r=parseFloat(document.getElementById('reagentes').value),p=parseFloat(document.getElementById('produto').value);if(!r||r<=0||isNaN(p)||p<0){alert('Informe massas válidas.');return}const eficiencia=(p/r)*100;const efactor=(r-p)/p;document.getElementById('eficiencia').textContent=eficiencia.toFixed(2)+'%';document.getElementById('efactor').textContent=p>0?efactor.toFixed(2):'—';document.getElementById('results').style.display='grid';const a=document.getElementById('advice');a.style.display='block';if(eficiencia>=90)a.textContent='Ótimo aproveitamento de massa. Continue buscando reduzir resíduos.';else if(eficiencia>=70)a.textContent='Bom aproveitamento, mas ainda há espaço para reduzir a geração de resíduos.';else a.textContent='A eficiência está baixa. Reveja o processo para tentar diminuir a quantidade de resíduos.'}
+function calcular(){const r=parseFloat(document.getElementById('reagentes').value),p=parseFloat(document.getElementById('produto').value);if(!r||r<=0||isNaN(p)||p<0){alert('Informe massas válidas.');return}const eficiencia=(p/r)*100;const efactor=(r-p)/p;document.getElementById('eficiencia').textContent=eficiencia.toFixed(2)+'%';document.getElementById('efactor').textContent=p>0?efactor.toFixed(2):'—';document.getElementById('results').style.display='grid';const a=document.getElementById('advice');a.style.display='block';if(eficiencia>=75)a.textContent='Ótimo aproveitamento de massa. Continue buscando reduzir resíduos.';else if(eficiencia < 75 && eficiencia >= 50)a.textContent='Bom aproveitamento, mas ainda há espaço para reduzir a geração de resíduos.';else a.textContent='A eficiência está baixa. Reveja o processo para tentar diminuir a quantidade de resíduos.'}
 </script></body></html>
